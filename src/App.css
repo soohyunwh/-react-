@@ -1,0 +1,183 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.app {
+  background: rgb(255, 227, 247);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 40px auto;
+}
+
+.date-display, .clock, .countdown, .date-picker {
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.title-box {
+  background-color: #ffffff;
+  padding: 0px 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  border: 5px solid #ff9fc4;
+  transition: box-shadow 0.35;
+}
+
+
+.title-box h1 {
+  color: #464757;
+  font-size: 28px;
+  font-weight: bolder;
+  margin-bottom: 30px;
+}
+
+.content-box {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  border: 5px solid #ff9fc4dd;
+  transition: box-shadow 0.35;
+}
+
+.date-display h2,
+.date-display p,
+.clock h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #464757;
+  margin-bottom: 10px;
+}
+
+.date-display p {
+  font-weight: bold;
+  font-size: 20px;
+  color: #333;
+}
+
+.todo-box {
+  background-color: #ffffff;
+  padding: 20px;
+  border: 5px solid #ff9fc4dd;
+  border-radius: 12px;
+  margin-top: 20px;
+  transition: box-shadow 0.35;
+}
+
+.todo-box h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #464757;
+  margin-bottom: 15px;
+}
+
+.todo-input button {
+  padding: 6px 10px;
+  font-size: 10px;
+  background-color: #ff9fc4dd;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.35;
+}
+
+.todo-item button {
+  padding: 4px 8px; /* 버튼 크기 줄임 */
+  font-size: 12px;  /* 글자 크기 줄임 */
+  background-color: #ff9fc4dd;
+  color: white;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+/* ✅ 전부 삭제 버튼 스타일 */
+.clear-button {
+  margin: 15px 0;
+  padding: 5px 10px;
+  font-size: 10px;
+  font-weight: bold;
+  color: white;
+  background-color: #ff9fc4dd;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 10px;
+  font-size: 16px;
+  border-bottom: 1px solid #e0e0e0;
+  gap: 10px;
+}
+
+.todo-item span {
+  flex-grow: 1;        /* 📌 텍스트가 왼쪽 정렬된 상태로 영역 차지 */
+  text-align: left;    /* 📌 왼쪽 정렬 */
+  cursor: pointer;
+  padding-left: 5px;
+}
+
+.todo-item input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.todo-item.completed span {
+  text-decoration: line-through;
+  color: #b0b0b0;
+}
